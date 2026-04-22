@@ -17,7 +17,7 @@
 
 .nav-links {
   list-style: none;
-  display: flex;
+  display:flex;
 }
 
 .nav-links li {
