@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Array</title>
+</head>
+</body>
+
+<h2>Item List</h2>
+<ul id="list"></ul>
+
+<script>
+    let items = ["Pen","Pencil","Book"];
+    let list = document.getElementById("list");
+    items.forEach(item=>
+    {
+        let li = document.createElement("li");
+        li.textContent = item;
+        list.appendChild(li);
+    });
+
+</script>
+
+</body>
+</html>
