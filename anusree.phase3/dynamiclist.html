@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic List</title>
+</head>
+<body>
+    
+    <h2>Dynamic List</h2>
+    <input type="text" id="itemInput" placeholder="Enter item">
+    <button onclick="addItem()">Add</button>
+    
+    <ul id="list"></ul>
+    
+    <script>
+    function addItem() {
+        let input = document.getElementById("itemInput");
+        let value = input.value.trim();
+        
+        if (value === "") return;
+        
+        let li = document.createElement("li");
+        li.textContent = value;
+        
+        document.getElementById("list").appendChild(li);
+        
+        input.value = "";
+    }
+    </script>
+
+</body>
+</html>
