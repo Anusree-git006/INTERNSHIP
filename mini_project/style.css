@@ -76,7 +76,7 @@ button {
   border: none;
 }
 
-/* 📱 Responsive Design */
+/*  Responsive Design */
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;

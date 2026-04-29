@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add/Remove Elements</title>
+</head>
+<body>
+
+    <button onclick="addElement()">Add Element</button>
+    <button onclick="removeElement()">Remove Element</button>
+
+    <div id="container"></div>
+
+    <script>
+        function addElement() {
+            let newElement = document.createElement("p");
+            newElement.textContent = "New Element Added!";
+            document.getElementById("container").appendChild(newElement);
+        }
+
+        function removeElement() {
+            let container = document.getElementById("container");
+            if (container.lastChild) {
+                container.removeChild(container.lastChild);
+            }
+        }
+    </script>
+    
+</body>
+</html>

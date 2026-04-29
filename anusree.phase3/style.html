@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Style</title>
+</head>
+<body>
+
+    <h2 id="mainHeading">Style me!</h2>
+    <button onclick="changeStyle()">Change Heading</button>
+
+    <script>
+        function changeStyle() {
+            const element = document.getElementById("mainHeading");
+            element.textContent = "Style Changed";
+            element.style.color = "violet";
+            element.style.fontSize = "25px";
+        }
+    </script>
+
+</body>
+</html>
